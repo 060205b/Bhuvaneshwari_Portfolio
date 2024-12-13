@@ -1,0 +1,115 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Dark background */
+    color: #f5f5f5; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Bright yellow accent */
+    margin-bottom: 10px;
+}
+
+/* Certifications Container */
+.certifications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Certification Grid without scrollbar */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Certification Card Styling */
+.certification-card {
+    background-color: #1c1c1c; /* Dark gray card background */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(116, 161, 50, 0.6); /* Yellow glow */
+}
+
+.certification-card h2 {
+    font-size: 1.5rem;
+    color: #fdd835; /* Bright yellow text */
+    margin-bottom: 15px;
+}
+
+/* Certificate Image Styling */
+.cert-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.certification-image {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certification-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certifications-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    }
+
+    .certification-image {
+        width: 120px; /* Smaller image size on mobile */
+    }
+}
+
+/* Zoom Modal Styling */
+#zoom-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+#zoom-content {
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}

@@ -1,0 +1,100 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Dark background */
+    color: #f5f5f5; /* Light text color */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Bright yellow accent */
+    margin-bottom: 10px;
+}
+
+header .subheading {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Skills Grid Container with Vertical Scroll */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 skill cards per row */
+    gap: 20px;
+    padding: 20px;
+    max-height: 500px; /* Set height to limit and allow scrolling */
+    overflow-y: auto; /* Enable vertical scroll */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #8bc34a transparent;
+    margin: 0 auto; /* Center grid */
+    max-width: 800px; /* Limit max width */
+}
+
+/* Scrollbar Styling */
+.skills-grid::-webkit-scrollbar {
+    width: 10px; /* Vertical scrollbar width */
+}
+
+.skills-grid::-webkit-scrollbar-thumb {
+    background-color: #8bc34a; /* Scroll thumb color */
+    border-radius: 10px;
+}
+
+.skills-grid::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Skill Card Styling */
+.skill-card {
+    background-color: #1c1c1c; /* Dark gray card background */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(116, 161, 50, 0.6); /* Yellow glow */
+}
+
+/* Skill Logo */
+.skill-card img {
+    width: 60px; /* Set a consistent size for all logos */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+/* Skill Text */
+.skill-card p {
+    font-size: 1rem;
+    color: #fdd835; /* Bright yellow text */
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 cards per row on smaller screens */
+        max-height: 600px;
+    }
+
+    .skill-card img {
+        width: 50px;
+        height: 50px;
+    }
+}

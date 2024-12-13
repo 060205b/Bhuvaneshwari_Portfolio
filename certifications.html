@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link rel="stylesheet" href="certifications.css">
+</head>
+<body>
+    <header>
+        <h1>My Certifications</h1>
+    </header>
+    <main>
+        <section class="certifications-container">
+            <!-- Certifications Grid -->
+            <div class="certifications-grid">
+                <!-- Great Learning Certifications -->
+                <div class="certification-card">
+                    <h2>Great Learning</h2>
+                    <div class="cert-images">
+                        <a href="certificate_images/Screenshot 2024-10-31 080757.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 080757.png" alt="Data Science with Python" class="certification-image">
+                        </a>
+                        <a href="certificate_images/Screenshot 2024-10-31 080715.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 080715.png" alt="Data Visualization using Tableau" class="certification-image">
+                        </a>
+                        <a href="certificate_images/Screenshot 2024-10-31 080604.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 080604.png" alt="R for Data Science" class="certification-image">
+                        </a>
+                        <a href="certificate_images/Screenshot 2024-10-31 080632.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 080632.png" alt="Artificial Intelligence Projects" class="certification-image">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IBM Certifications -->
+                <div class="certification-card">
+                    <h2>IBM</h2>
+                    <div class="cert-images">
+                        <a href="certificate_images/Screenshot 2024-10-31 080840.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 080840.png" alt="IBM Watson" class="certification-image">
+                        </a>
+                        <a href="certificate_images/Screenshot 2024-10-31 080902.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 080902.png" alt="Introduction to Python" class="certification-image">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cognitive Class Certifications -->
+                <div class="certification-card">
+                    <h2>Cognitive Class</h2>
+                    <div class="cert-images">
+                        <a href="certificate_images/Screenshot 2024-10-31 085029.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 085029.png" alt="Data Analysis with Python" class="certification-image">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Swayam Certifications -->
+                <div class="certification-card">
+                    <h2>Swayam</h2>
+                    <div class="cert-images">
+                        <a href="certificate_images/Screenshot 2024-10-31 081137.png" target="_blank">
+                            <img src="certificate_images/Screenshot 2024-10-31 081137.png" alt="Introduction to Python" class="certification-image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zoom Modal -->
+        <div id="zoom-modal" onclick="closeZoom()">
+            <div id="zoom-content"></div>
+        </div>
+    </main>
+
+    <script>
+        function openZoom(element) {
+            const modal = document.getElementById("zoom-modal");
+            const zoomContent = document.getElementById("zoom-content");
+            zoomContent.innerHTML = element.innerHTML;
+            modal.style.display = "flex";
+        }
+
+        function closeZoom() {
+            document.getElementById("zoom-modal").style.display = "none";
+        }
+    </script>
+</body>
+</html>
