@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Detection Using CNN</title>
+    <link rel="stylesheet" href="/projects/sign_detection_cnn/sign_detection.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="text-center p-4">
+        <h1>Signature Detection Using Convolutional Neural Network (CNN)</h1>
+    </header>
+
+    <main class="container">
+
+        <!-- Project Overview -->
+        <section class="content-container project-overview">
+            <h2>Project Overview</h2>
+            <p>Provides an automated, scalable solution for signature detection and classification. Utilizes deep learning with transfer learning on the pre-trained VGG16 model. Streamlines signature verification, reducing manual labor and increasing accuracy in various professional sectors.</p>
+        </section>
+
+        <!-- Problem Statement -->
+        <section class="content-container problem-statement">
+            <h2>Problem Statement</h2>
+            <p>Traditional methods lack efficiency and accuracy, especially with large datasets and varied handwriting styles. Manual verification is time-intensive and prone to human error, while conventional algorithms may not effectively distinguish authentic from forged signatures. This project aims to solve these challenges by developing a high-accuracy model for efficient signature classification using a CNN architecture.</p>
+        </section>
+
+        <!-- Methodology -->
+        <section class="content-container methodology">
+            <h2>Methodology</h2>
+
+            <!-- Data Preprocessing and Transformation -->
+            <div class="subsection">
+                <h3>Data Preprocessing and Transformation</h3>
+                <p>Signature images resized to 224x224 pixels for compatibility with VGG16. Images normalized using Torchvision transformations (ImageNet mean and standard deviation) for improved convergence. Data handled via PyTorch’s ImageFolder and DataLoader, supporting efficient batching during training.</p>
+            </div>
+
+            <!-- Model Architecture and Transfer Learning -->
+            <div class="subsection">
+                <h3>Model Architecture and Transfer Learning</h3>
+                <p>Uses VGG16, renowned for image classification, pretrained on the ImageNet dataset. Applies transfer learning, freezing feature extraction layers and fine-tuning only fully connected layers, minimizing overfitting while leveraging prior knowledge.</p>
+            </div>
+
+            <!-- Training Process and Optimization -->
+            <div class="subsection">
+                <h3>Training Process and Optimization</h3>
+                <p>Cross-Entropy Loss for multi-class classification and Adam optimizer for dynamic learning rate adjustments, enhancing performance. Step Learning Rate Scheduler (StepLR) adjusts learning rates periodically, promoting smooth convergence and efficient adaptation. Training includes forward propagation, backpropagation, and scheduled learning rate reduction for optimized weight adjustment.</p>
+            </div>
+        </section>
+
+        <!-- Signature Classification and Real-Time Prediction -->
+        <section class="content-container classification">
+            <h2>Signature Classification and Real-Time Prediction</h2>
+            <p>The <code>classify_image</code> function enables efficient prediction, preprocessing new signature images and producing class probabilities using softmax activation. Outputs predicted class and confidence level, suitable for real-time applications or batch processing in signature verification.</p>
+        </section>
+
+        <!-- Tools and Technologies Employed -->
+        <section class="content-container tools">
+            <h2>Tools and Technologies Employed</h2>
+            <ul>
+                <li><strong>PyTorch</strong>: Core deep learning framework, enabling flexible CNN design and deployment.</li>
+                <li><strong>Torchvision</strong>: Supplies pretrained models (VGG16) and essential image transformations for input consistency.</li>
+                <li><strong>VGG16 Architecture</strong>: Provides a proven foundation for image classification, with transfer learning enabling adaptation to signature detection.</li>
+                <li><strong>PIL (Python Imaging Library)</strong>: Efficient image handling, supporting preprocessing and model input preparation.</li>
+            </ul>
+        </section>
+
+        <!-- Solution Impact -->
+        <section class="content-container impact">
+            <h2>Solution Impact</h2>
+            <p>Delivers a robust, automated signature verification solution, reducing manual checks and enhancing reliability. Capable of handling diverse handwriting styles, providing accurate classifications for real-time or large-scale applications. Potential for application in related tasks, such as document verification and biometric analysis, demonstrating versatility beyond signature detection.</p>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-3">
+        <p>&copy; 2024 Signature Detection System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

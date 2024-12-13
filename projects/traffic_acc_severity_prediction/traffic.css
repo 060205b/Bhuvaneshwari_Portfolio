@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    line-height: 1.6; /* Increase line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light background color */
+    background-image: url('/projects/traffic_acc_severity_prediction/traffic.bg.jpg'); /* Add a background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Center the background image */
+}
+
+/* Centering the main content */
+main {
+    max-width: 1000px; /* Maximum width for the main content */
+    margin: 0 auto; /* Center the main content horizontally */
+    padding: 2em; /* Padding around the main content */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(98, 96, 93, 0.8); /* Dark header with some transparency */
+    color: #fff; /* White text color */
+    padding: 1em; /* Padding inside header */
+    text-align: center; /* Center header text */
+}
+
+/* Section Styles */
+section {
+    background: rgba(226, 226, 226, 0.8); /* Semi-transparent white background for sections */
+    margin: 1.5em 0; /* Space between sections */
+    padding: 1.5em; /* Padding inside sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading Styles */
+h2 {
+    color: #333; /* Dark color for section headings */
+    border-bottom: 2px solid #6c757d;
+}
+
+/* Subheading Styles */
+h3, h4 {
+    color: #555; /* Dark gray for subheadings */
+}
+
+/* Image Container Styles */
+/* Image Container Styles */
+.image-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    margin: 1em 0; /* Space above and below images */
+    padding: 1em; /* Padding around image container */
+}
+
+/* Project Image Styles */
+.project-image {
+    width: 700px; /* Set a fixed width for all images */
+    height: auto; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for images */
+}
+
+/* Image Container Styles */
+.image-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images horizontally */
+    margin: 1em 0; /* Space above and below images */
+    padding: 1em; /* Padding around image container */
+}
+
+/* Project Image Styles */
+.project-image {
+    width: 700px; /* Set a fixed width for all images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for images */
+    margin: 10px 0; /* Add space between images */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 1em; /* Padding inside footer */
+    background-color: rgba(51, 51, 51, 0.8); /* Dark footer with some transparency */
+    color: #fff; /* White text color */
+    position: relative; /* Position relative for any additional elements */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
+}

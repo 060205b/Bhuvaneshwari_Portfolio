@@ -1,0 +1,72 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-image: url('/projects/sign_detection_cnn/sign_detection.webp'); /* Add a background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(98, 96, 93, 0.8);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Container and Section Styling */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Content Container Styling */
+.content-container {
+    background: rgba(255, 255, 255, 0.8); /* More transparency */
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.content-container:hover {
+    transform: scale(1.02);
+}
+
+/* Section Header Styling */
+h2 {
+    color: #343a40;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 0.3em;
+}
+
+h3 {
+    color: #495057;
+}
+
+/* List Styling */
+ul {
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Registration System</title>
+    <link rel="stylesheet" href="/projects/multi-layered_webpage/multi-layerd.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Multi-Layered Webpage</h1>
+    </header>
+
+    <main>
+        <!-- Overview Section -->
+        <div class="container overview">
+            <h2>Project Overview</h2>
+            <p>The Project Registration System is a comprehensive web-based application that allows users to register, browse products, showcase portfolios, and participate in polling. Designed with user experience in mind, this application provides a seamless interaction for various functionalities including e-commerce, personal displays, and community engagement.</p>
+        </div>
+
+        <!-- Project Structure Section -->
+        <div class="container project-structure">
+            <h2>Project Structure</h2>
+            <ol>
+                <li>
+                    <strong>Base Page (base.html)</strong><br>
+                    Purpose: The Base Page serves as the foundational template for the Project Registration system. It provides a consistent layout and styling for all subsequent pages, ensuring a cohesive user experience. Key elements like headers, footers, and navigation links are included to guide users through the application.
+                </li>
+            </ol>
+        </div>
+
+        <!-- Registration Page Section -->
+        <div class="container registration-page">
+            <h2>Project Registration Page (index.html)</h2>
+            <p>This page allows users to register by inputting personal details, including name, contact information, and demographic data. The user-friendly form facilitates easy onboarding, making the registration process straightforward and efficient.</p>
+        </div>
+
+        <!-- E-Commerce Page Section -->
+        <div class="container e-commerce-page">
+            <h2>E-Commerce Page (e-commerce.html)</h2>
+            <p>The E-Commerce Page showcases various products, enabling users to browse items, view product descriptions, and add them to a shopping cart. This interactive platform enhances the shopping experience by making it engaging and user-centric.</p>
+        </div>
+
+        <!-- Portfolio Page Section -->
+        <div class="container portfolio-page">
+            <h2>Portfolio Page (personal_portfolio.html)</h2>
+            <p>The Portfolio Page presents a user's personal information, work experience, education, and skills. It acts as a digital resume, allowing users to effectively showcase their qualifications and professional journey.</p>
+        </div>
+
+        <!-- Polling Page Section -->
+        <div class="container polling-page">
+            <h2>Polling Selection Page (polling_selection.html)</h2>
+            <p>This page features a polling system that enables users to vote for their favorite images (e.g., dogs or cats) while collecting demographic information. It promotes user engagement and collects valuable data for further analysis.</p>
+        </div>
+
+        <!-- Form Data Section -->
+        <div class="container form-data">
+            <h2>Form Data (formdata.json)</h2>
+            <p>The formdata.json file is used to store submitted user data in a structured format. This ensures that the information is persistently saved and easily retrievable for analysis and further processing.</p>
+        </div>
+
+        <!-- Server File Section -->
+        <div class="container server-file">
+            <h2>Server File (server.js)</h2>
+            <p>The Server File sets up a local server using Express, handling incoming form submissions and saving the data to formdata.json. It enables the backend functionality required for the application, ensuring smooth data flow between the client and server.</p>
+        </div>
+
+        <!-- Technologies Used Section -->
+        <div class="container technologies-used">
+            <h2>Technologies Used</h2>
+            <h4>Frontend Technologies</h4>
+            <ul>
+                <li>HTML5: Structured the content across all pages, ensuring semantic and accessible markup.</li>
+                <li>CSS3: Enhanced visual appeal and provided responsive design, adapting to different screen sizes.</li>
+                <li>JavaScript: Implemented interactivity for features such as form validation, dynamic cart updates, and polling submissions.</li>
+                <li>Bootstrap: Utilized for a responsive layout and pre-designed components, ensuring a mobile-friendly interface.</li>
+            </ul>
+
+            <h4>Backend Technologies</h4>
+            <ul>
+                <li>Node.js: Used as the JavaScript runtime for server-side execution, handling requests and responses efficiently.</li>
+                <li>Express.js: A web framework for Node.js, simplifying routing and middleware handling for organized server code.</li>
+                <li>File System Module: Used to read from and write data to formdata.json, ensuring persistent storage of user submissions.</li>
+            </ul>
+
+            <h4>Data Storage</h4>
+            <p>JSON: A lightweight data format used for storing form submissions in a structured manner, facilitating easy manipulation and retrieval of data.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Project Registration System. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

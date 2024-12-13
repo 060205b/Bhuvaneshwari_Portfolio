@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projects/analytics_model_building/analytics.css"> <!-- Link to your CSS -->
+    <title>Restaurant Ratings Analysis Project</title>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Ratings Analysis Project</h1>
+    </header>
+
+    <main>
+        <!-- Problem Statement -->
+        <section class="section">
+            <h2>Problem Statement</h2>
+            <p>In a competitive restaurant industry, understanding what drives customer satisfaction is crucial for success. Many restaurant owners struggle to gauge how various factors—such as pricing, delivery options, and cuisine types—affect their ratings. How can we identify key influencers of restaurant ratings and predict future ratings based on existing data?</p>
+        </section>
+
+        <!-- Solution Overview -->
+        <section class="section">
+            <h2>Solution Overview</h2>
+            <p>This project aims to address the problem by leveraging data analysis and machine learning techniques to uncover insights into the factors influencing restaurant ratings and to build predictive models. The analysis focuses on:</p>
+            <ul>
+                <li>Data Exploration</li>
+                <li>Feature Engineering</li>
+                <li>Model Development</li>
+                <li>Data Visualization</li>
+            </ul>
+        </section>
+
+        <!-- Data Exploration and Preprocessing -->
+        <section class="section">
+            <h2>1. Data Exploration and Preprocessing</h2>
+            <p>Data Loading and Quality Check: Loaded the dataset, assessed its structure, and checked for missing values, ensuring a clean dataset for analysis.</p>
+            <p>Categorical Encoding: Converted categorical variables into numeric format for model compatibility, facilitating more effective analysis.</p>
+            <p>Data Filtering: Focused on restaurants offering both table booking and online delivery to understand the impact of these features on customer ratings.</p>
+        </section>
+
+        <!-- Feature Engineering and Selection -->
+        <section class="section">
+            <h2>2. Feature Engineering and Selection</h2>
+            <p>Key Features: Identified critical features for modeling, such as Average Cost for two, Price range, Votes, and booking options. The target variable, Aggregate rating, served as the output we aimed to predict.</p>
+            <p>Scaling and Normalization: Applied standardization to features using StandardScaler, ensuring consistent scaling and enhancing model performance.</p>
+            <p>Train-Test Split: Divided the data into training and testing sets (80-20 split) to evaluate model accuracy effectively.</p>
+        </section>
+
+        <!-- Model Development and Evaluation -->
+        <section class="section">
+            <h2>3. Model Development and Evaluation</h2>
+            <p>Linear Regression: Developed a baseline model to predict restaurant ratings and conducted statistical analysis using OLS regression to understand feature significance and relationships.</p>
+            <p>OLS Regression Results</p>
+            <div class="image-container">
+                <img src="/projects/project_images/OLS_regression_results.png" alt="Linear Regression Results" class="project-image">
+            </div>
+            <div class="image-container">
+                <img src="/projects/project_images/Linear_regg_performance.png" alt="Linear Regression Results" class="project-image">
+            </div>            
+            <p>Visualization of Actual vs. Predicted Values: This plot helps in visually assessing the performance of the Linear Regression model, highlighting how closely the predicted ratings align with actual ratings.</p>
+            <p>Decision Tree Regressor: Implemented a Decision Tree model to capture non-linear patterns in the data.</p>
+            <div class="image-container">
+                <img src="/projects/project_images/Decision_tree_performance.png" alt="Decision Tree Visualization" class="project-image">
+            </div>
+            <p>Random Forest Regressor: Applied an ensemble method, the Random Forest Regressor, to improve prediction accuracy by averaging multiple decision trees.</p>
+            <p>Model Comparison: Compiled a comparison of model performances, summarizing key metrics (MAE and R²) to identify the most effective model for predicting restaurant ratings.</p>
+            <div class="image-container">
+                <img src="/projects/project_images/random_regg_performance (2).png" alt="Model Performance Comparison" class="project-image">
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>4. Data Visualization and Insights</h2>
+            <p>Top 20 Cuisines and Aggregate Ratings: This bar plot visualizes the average ratings of the top 20 cuisines, revealing customer preferences in a clear and interpretable manner.</p>
+            <div class="image-container">
+                <img src="/projects/project_images/Top_cuisines_ratings.png" alt="Top Cuisines Ratings" class="project-image">
+            </div>
+            <p>Distribution Analysis: Utilized histograms, boxplots, and violin plots to examine the distribution of ratings.</p>
+            <div class="image-container">
+                <img src="/projects/project_images/Distribution_of_ratings.png" alt="Distribution of Ratings" class="project-image">
+            </div>
+            <p>Ratings by Top Cities: Analyzed how aggregate ratings vary across cities. This violin plot illustrates the distribution of ratings across cities, providing insights into regional differences in restaurant performance.</p>
+            <div class="image-container">
+                <img src="/projects/project_images/Ratings_cities.png" alt="Ratings by City" class="project-image">
+            </div>
+            <p>Feature Interactions: Created pair plots to visualize the relationships between key features and the target variable.</p>
+            <div class="image-container">
+                <img src="/projects/project_images/pair_plot.png" alt="Pair Plot of Selected Features" class="project-image">
+            </div>
+        </section>        
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Restaurant Ratings Analysis Project</p>
+    </footer>
+</body>
+</html>

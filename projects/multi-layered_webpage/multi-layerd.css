@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('/projects/multi-layered_webpage/multi-layered_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Centering the main content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(98, 96, 93, 0.8);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-emphasis-color:rgba(0, 0, 0, 0.1);
+}
+
+/* Container Styles for Each Section */
+.container {
+    background: rgba(255 , 255, 255, 0.8);
+    padding: 1.5em;
+    margin: 1.5em 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+
+/* Heading Styles */
+h2 {
+    color: #333;
+    border-bottom: 2px solid #6c757d;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* Additional Styles for Better Spacing and Clarity */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+p {
+    margin: 0.5em 0;
+    text-align: justify;
+}

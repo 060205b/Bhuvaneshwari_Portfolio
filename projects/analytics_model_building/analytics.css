@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    background-image: url('/projects/analytics_model_building/analytics_bg.jpg'); /* Add a background image */ /* Make the background cover the entire viewport */
+    background-position:unset; /* Center the background image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
+
+/* Centering the main content */
+main {
+    max-width: 1000px; /* Maximum width for the main content */
+    margin: 0 auto; /* Center the main content horizontally */
+    padding: 2em;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(98, 96, 93, 0.8); /* Dark header with some transparency */
+    color: #fff; /* White text color */
+    padding: 1em;
+    text-align: center;
+}
+
+/* Section Styles */
+.section {
+    background: rgba(226, 226, 226, 0.9); /* Semi-transparent white background */
+    margin: 1.5em 0;
+    padding: 1.5em;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Heading Styles */
+h2 {
+    color: #333; /* Dark color for headings */
+    border-bottom: 2px solid #6c757d;
+}
+
+/* Image Container Styles */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.project-image {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for images */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(51, 51, 51, 0.8); /* Dark footer with some transparency */
+    color: #fff; /* White text color */
+}

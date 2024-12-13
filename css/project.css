@@ -1,0 +1,176 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Dark background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header Styling Without Container Effect */
+header {
+    color: #ffffff; /* Light text */
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+/* Link Styling in Header for Buttons */
+header a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+header a:hover {
+    color: #fdd835; /* Color change on hover */
+}
+
+/* Container and Section Styling */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Content Container Styling with Transparency */
+.content-container {
+    background: rgba(56, 56, 56, 0.8); /* Semi-transparent background */
+    padding: 1.5em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.content-container:hover {
+    transform: scale(1.02);
+}
+
+/* Section Header Styling */
+h2 {
+    color: #f0f8ff;
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 0.3em;
+}
+
+p {
+    color: #fefefe;
+}
+
+/* List Styling */
+ul {
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1em 0;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+/* General Styles for Project Page */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    grid-template-rows: auto;
+    gap: 1em;
+    padding: 2em;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Place the two items in the second row at the center */
+.project-card:nth-child(4) {
+    grid-column: 1 / 3; /* Center the first item in the second row */
+    grid-row: 2;
+}
+
+.project-card:nth-child(5) {
+    grid-column: 2 / 4; /* Center the second item in the second row */
+    grid-row: 2;
+}
+
+/* Project Card Container */
+.project-card {
+    background-color: rgba(93, 92, 92, 0.8); /* Semi-transparent white */
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(116, 161, 50, 0.6); /* Yellow glow on hover */
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+.project-description {
+    padding: 0.5em;
+    flex-grow: 1;
+}
+
+.project-description h2 {
+    margin: 0;
+    color: #fdd835; /* Light blue for title */
+}
+
+.project-description p {
+    color: #fbfbfb; /* Light text */
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    }
+
+    .project-card {
+        width: 100%;
+        height: auto; /* Make the cards adjust to the content on smaller screens */
+    }
+
+    .project-image {
+        height: 150px; /* Adjust image height on smaller screens */
+    }
+}

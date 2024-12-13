@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Comment Classifier</title>
+    <link rel="stylesheet" href="/projects/youtube_comment_classifier/youtube_comment.css"> <!-- Make sure this is the correct path to your CSS file -->
+</head>
+
+<body>
+
+    <header>
+        <h1>YouTube Comment Classifier</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="content-container">
+            <h2>Project Overview</h2>
+            <p>This project implements a YouTube comment classifier that utilizes sentiment analysis to evaluate and categorize user comments on YouTube videos. By leveraging the YouTube Data API and the VADER sentiment analysis library, this tool can automatically assess the sentiment of comments as Positive, Negative, or Neutral, while also tracking the number of likes associated with each comment.</p>
+        </div>
+
+        <div class="content-container">
+            <h2>Problem Statement</h2>
+            <p>With the increasing volume of user comments on YouTube videos, content creators and marketers need effective methods to gauge audience sentiment. Manually reading through comments to determine viewer opinions is time-consuming and impractical. Therefore, the goal of this project is to automate the process of sentiment analysis on YouTube comments, providing valuable insights into viewer perceptions through a structured approach.</p>
+        </div>
+
+        <div class="content-container">
+            <h2>Data Analysis and Visualizations</h2>
+            <p>The project retrieves comments from a specified YouTube video using the YouTube Data API. The comments are analyzed for sentiment using the VADER Sentiment Analysis library, which provides a sentiment score for each comment.</p>
+            <ul>
+                <li><strong>Comment Retrieval:</strong> Fetches up to 100 comments at a time, including their like counts, until all comments are retrieved.</li>
+                <li><strong>Sentiment Analysis:</strong> Each comment is evaluated to classify it into Positive, Negative, or Neutral categories based on its sentiment score.</li>
+                <li><strong>Sentiment Distribution:</strong> After processing the comments, the overall sentiment percentages are calculated, providing insights into audience reactions.</li>
+            </ul>
+        </div>
+
+        <div class="content-container">
+            <h2>Model Building</h2>
+            <p>The model is not a traditional machine learning model but rather a pipeline that combines comment retrieval from the YouTube Data API and sentiment scoring using the VADER sentiment analysis tool. The sentiment analysis involves initializing the VADER Sentiment Intensity Analyzer and processing each comment to obtain sentiment scores and categorize them based on predefined thresholds.</p>
+        </div>
+
+        <div class="content-container">
+            <h2>Model Saving</h2>
+            <p>Although this project does not involve saving a trained model, it saves sentiment scores and comment data in the comments_data list for further analysis and reporting. If required, the results can be exported to a CSV file or a database for persistent storage and later use.</p>
+        </div>
+
+        <div class="content-container">
+            <h2>Solution</h2>
+            <p>The solution automates the sentiment analysis process for YouTube comments, providing a straightforward means for content creators to understand their audience's feelings about their videos. This tool enhances user engagement analysis and helps in making data-driven decisions regarding content strategy.</p>
+        </div>
+
+        <div class="content-container">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>YouTube Comment Retrieval:</strong> Automatically fetches comments and their like counts from specified videos.</li>
+                <li><strong>Sentiment Classification:</strong> Classifies comments into Positive, Negative, and Neutral categories based on sentiment analysis.</li>
+                <li><strong>Visualization:</strong> Displays sentiment distribution using a bar chart for easy interpretation of viewer opinions.</li>
+                <li><strong>API Integration:</strong> Utilizes the YouTube Data API for seamless interaction with YouTube content.</li>
+                <li><strong>User-Friendly Output:</strong> Provides a detailed printout of comments along with their sentiment and like counts, offering insights at a glance.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 YouTube Comment Classifier. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

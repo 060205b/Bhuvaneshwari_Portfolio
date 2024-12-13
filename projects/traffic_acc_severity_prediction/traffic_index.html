@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Accident Severity Prediction</title>
+    <link rel="stylesheet" href="projects\traffic_acc_severity_prediction\traffic.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Traffic Accident Severity Prediction</h1>
+    </header>
+    
+    <main>
+        <section class="project-overview">
+            <h2>Project Overview</h2>
+            <p>The Traffic Accident Severity Prediction System leverages machine learning techniques to predict the severity of traffic accidents based on various parameters. This project employs a Random Forest Classifier, enhanced through GridSearchCV for optimal hyperparameter tuning. A web application built using Flask provides a user-friendly interface for inputting parameters and receiving predictions on accident severity.</p>
+        </section>
+
+        <section class="problem-statement">
+            <h2>Problem Statement</h2>
+            <p>Traffic accidents are a major public safety concern, leading to numerous injuries and fatalities each year. Accurately predicting the severity of these accidents is crucial for emergency response planning and traffic management. The challenge lies in developing a robust model that can analyze various influencing factors—such as driver age, weather conditions, and collision types—to provide reliable severity predictions.</p>
+        </section>
+
+        <section class="data-analysis">
+            <h2>Data Analysis and Visualizations</h2>
+            <p>The data analysis phase involves examining the dataset to uncover insights and trends that inform the model-building process. Key visualizations include:</p>
+        
+            <h3>1. Initial Data Analysis</h3>
+            <h4>Age Band Distribution</h4>
+            <p>Visualizing the distribution of accident severity across different age bands helps understand the demographic factors impacting accident outcomes.</p>
+            <div class="image-container">
+                <img src="projects\project_images\Age_band_severity.png" alt="Age Band Distribution vs Accident Severity" class="project-image">
+            </div>
+        
+            <h4>Weather Condition Impact</h4>
+            <p>This visualization illustrates how various weather conditions affect accident severity.</p>
+            <div class="image-container">
+                <img src="\projects\project_images\Weather_severity.png" alt="Weather Conditions vs Accident Severity" class="project-image">
+            </div>
+        
+            <h3>3. Heatmap of Feature Correlations</h3>
+            <p>The heatmap provides a visual representation of correlations between features, aiding in feature selection and understanding interdependencies.</p>
+            <div class="image-container">
+                <img src="projects/project_images/traffic_heatmap.png" alt="Feature Correlation Heatmap" class="project-image">
+            </div>
+        </section>
+
+        <section class="model-building">
+            <h2>Model Building</h2>
+            <p>The modeling process involved:</p>
+            <ul>
+                <li><strong>Data Preprocessing:</strong> The dataset was cleaned and split into training and testing sets (X_train, X_test, y_train, y_test) for evaluation.</li>
+                <li><strong>Model Selection:</strong> A Random Forest Classifier was chosen for its effectiveness in handling complex datasets while minimizing overfitting.</li>
+                <li><strong>Hyperparameter Tuning with GridSearchCV:</strong> GridSearchCV was utilized to fine-tune hyperparameters such as:
+                    <ul>
+                        <li><b>Number of estimators:</b> The number of trees in the forest.</li>
+                        <li><b>Max depth: </b>Limits the maximum depth of trees to mitigate overfitting.</li>
+                        <li><b>Minimum samples split:</b> Specifies the minimum number of samples needed to split an internal node.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>This rigorous tuning process ensures that the model performs at its best, achieving higher accuracy in predictions.</p>
+        </section>
+
+        <section class="model-saving">
+            <h2>Model Saving</h2>
+            <p>Upon completion of training and tuning, the best-performing model was saved using Pickle. This allows for easy deployment and usage in future applications without the need for retraining.</p>
+        </section>
+
+        <section class="solution">
+            <h2>Solution</h2>
+            <p>The result of this project is a robust predictive model capable of classifying traffic accident severity into three categories: Low, Medium, and High. This model provides valuable insights that can assist drivers and traffic authorities in making informed decisions, ultimately contributing to improved road safety and effective resource allocation in emergency situations.</p>
+        </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Machine Learning Prediction:</strong> A finely tuned Random Forest model that predicts traffic accident severity (Low, Medium, High).</li>
+                <li><strong>Web Interface:</strong> Developed using Flask, enabling users to interact with the model through a simple web form.</li>
+                <li><strong>Feature Importances:</strong> Visualized insights into the features that significantly affect accident severity predictions.</li>
+                <li><strong>SHAP and LIME Plots:</strong> Integrated tools for model interpretation, providing clarity on how individual features influence prediction outcomes.</li>
+            </ul>
+            <h3>SHAP plot</h3>
+            <div class="image-container">
+                <img src="/projects/project_images/shap_plot.png" alt="SHAP plot" class="project-image">
+            </div>
+            <h3>LIME plot</h3>
+            <div class="image-container">
+                <img src="/projects/project_images/lime_plot.png" alt="LIME plot" class="project-image">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
